@@ -1,0 +1,13 @@
+{
+	"id": "Index",
+	"name": "Index",
+	"display_name": "Index",
+	"author": ["MP"],
+	"description": "The will of The City demands Jokers.",
+	"prefix": "index",
+	"main_file": "main.lua",
+	"priority": 10,
+	"badge_colour": "900090",
+	"badge_text_colour": "FFFFFF",
+	"version": "0.1.0m",
+}
