@@ -15,3 +15,9 @@ for folder, list in pairs(files) do
         end
     end
 end
+
+SMODS.Rarity{
+    key = "unavailable",
+    badge_colour = G.C.RED,
+    default_weight = 0
+}

@@ -21,7 +21,7 @@ SMODS.Joker {
 			mult = 2
 		}
 	},
-	rarity = cry and "biblio_exalted" or "biblio_unavailable",
+	rarity = cry and "biblio_exalted" or "index_unavailable",
 	calculate = function(self, card, context)
 		if
 			(
