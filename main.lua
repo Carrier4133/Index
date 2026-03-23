@@ -1,7 +1,8 @@
 local files = {
 	jokers = {
 		"KingsChariot",
-		"WarioMan"
+		"WarioMan",
+		"DiamondAnte"
 	}
 }
 
