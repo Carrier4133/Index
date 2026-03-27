@@ -2,18 +2,21 @@ local cry = SMODS.find_mod("Cryptid")[1]
 local biblio = SMODS.find_mod("Bibliography")[1]
 
 if cry and biblio then
-	SMODS.Joker:take_ownership("j_cry-wario")
-		biblio_evolution = "j_index_warioman"
+	SMODS.Joker:take_ownership("j_cry-wario", {
+		biblio_evolution = "j_index_warioman",
 		biblio_evol_effect = function (self, newcard, oldextra)
 			for _,v in ipairs{money} do
 				newcard.ability.extra[v] = oldextra[v]
 			end
 		end
+	})
 end
 
 SMODS.Joker {
 	key = "wario-man",
 	name = "Wario-Man",
+	atlas = "placeholders",
+	pos = {x = 0, y = 0},
 	config = {
         	extra = {
 			chips = 20,

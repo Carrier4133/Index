@@ -1,6 +1,9 @@
 
 SMODS.Joker {
 	key = "Kings_Chariot",
+	name = "The King's Chariot",
+	atlas = "placeholders",
+	pos = {x = 0, y = 0},
 	calculate = function(self, card, context)
 		if context.before and not context.blueprint then
 			local faces = 0

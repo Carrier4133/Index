@@ -1,6 +1,8 @@
 SMODS.Joker {
 	key = "V1",
 	name = "V1",
+	atlas = "placeholders",
+	pos = {x = 0, y = 0},
 	config = {
         	extra = {
 			suit = 'Hearts',

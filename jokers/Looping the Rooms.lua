@@ -1,6 +1,8 @@
 SMODS.Joker {
 	key = "looping_rooms",
 	name = "Looping the Rooms",
+	atlas = "placeholders",
+	pos = {x = 0, y = 0},
 	config = {
 		extra = {
 			diamond_count = 0

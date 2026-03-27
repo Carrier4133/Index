@@ -1,10 +1,7 @@
-local files = {
-	jokers = {
-		"KingsChariot",
-		"WarioMan",
-		"DiamondAnte"
-	}
-}
+local jokers_src = SMODS.NFS.getDirectoryItems(SMODS.current_mod.path .. "src/jokers")
+for _, file in ipairs(jokers_src) do
+    assert(SMODS.load_file("src/jokers"..file))
+end
 
 for folder, list in pairs(files) do
     for _, name in ipairs(list) do
