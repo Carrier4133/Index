@@ -8,18 +8,17 @@ if cry and biblio then
 			for _,v in ipairs{money} do
 				newcard.ability.extra[v] = oldextra[v]
 			end
-		end,
-	})
+		end
 end
 
 SMODS.Joker {
-	key = "wario-man"
-	name = "Wario-Man"
+	key = "wario-man",
+	name = "Wario-Man",
 	config = {
         	extra = {
 			chips = 20,
 			mult = 2
-		}
+		},
 	},
 	rarity = cry and "biblio_exalted" or "index_unavailable",
 	calculate = function(self, card, context)
@@ -37,7 +36,7 @@ SMODS.Joker {
 		end
 		if context.joker_main then
 			return {
-				chips = card.ability.extra.chips * math.max(0, (G.GAME.dollars + (G.GAME.dollar_buffer or 0)))
+				chips = card.ability.extra.chips * math.max(0, (G.GAME.dollars + (G.GAME.dollar_buffer or 0))),
 				mult = card.ability.extra.mult * math.max(0, (G.GAME.dollars + (G.GAME.dollar_buffer or 0)))
 			}
 		end

@@ -1,5 +1,5 @@
 SMODS.Joker {
-	key = "looping_rooms"
+	key = "looping_rooms",
 	name = "Looping the Rooms",
 	config = {
 		extra = {
