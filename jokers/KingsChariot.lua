@@ -17,6 +17,8 @@ SMODS.Joker {
 							return true
 						end
 					}))
+					local lowest_rank = 15
+					local lowest_card = nil
 					for _, hand_card in ipairs(G.hand.cards) do
 						local rank = hand_card.base.value
 						if rank == 'Jack' then rank = 11

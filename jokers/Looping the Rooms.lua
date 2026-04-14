@@ -9,6 +9,7 @@ SMODS.Joker {
 		}
 	},
 	rarity = 3,
+	cost = 9,
 	loc_vars = function(self, info_queue, card)
 		return {card.ability.extra.diamond_count}
 	end,
